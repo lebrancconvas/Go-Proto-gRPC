@@ -1,0 +1,11 @@
+syntax = "proto3"; 
+
+package proto;  
+
+message Mage {
+	string name = 1;
+	uint32 level = 2;
+	string element = 3;
+	uint32 health = 4;
+	uint32 mana = 5; 
+}
