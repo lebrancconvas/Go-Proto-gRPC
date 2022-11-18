@@ -4,10 +4,20 @@ package proto;
 
 option go_package = "./proto"; 
 
+enum Element {
+  ELEMENT_UNSPECIFIED = 0;
+  ELEMENT_EARTH = 1;
+  ELEMENT_WATER = 2;
+  ELEMENT_WIND = 3;
+  ELEMENT_FIRE = 4;
+  ELEMENT_LIGHT = 5;
+  ELEMENT_DARK = 6; 
+}
+
 message Mage {
-	string name = 1;
-	uint32 level = 2;
-	string element = 3;
-	uint32 health = 4;
-	uint32 mana = 5; 
+  string name = 1;
+  uint32 level = 2;
+  Element element = 3; 
+  uint32 health = 4;
+  uint32 mana = 5; 
 }
