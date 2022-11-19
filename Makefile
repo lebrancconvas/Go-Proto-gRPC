@@ -1,5 +1,5 @@
 gen: 
-	protoc --go_out=proto/gen proto/$(gen).proto 
+	protoc --go_out=proto/gen --go-grpc_out=proto/gen/services proto/$(gen).proto  
 
 clean:
 	rm proto/gen/**/*.go 
